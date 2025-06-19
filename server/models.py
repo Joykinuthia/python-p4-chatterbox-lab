@@ -15,5 +15,5 @@ class Message(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String, nullable=False)
     username = db.Column(db.String, nullable=False)
-    created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    created_at = db.Column(db.DateTime, nullable=False, default=datetime. utcnow)
     updated_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
